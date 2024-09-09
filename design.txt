@@ -1,0 +1,111 @@
+1. Users Table
+
+Table Name: Users
+
+Primary Key: userId (String)
+
+Fields:
+
+	•	userId (String): A unique identifier for each user.
+	•	email (String): The email address of the user (must be unique).
+	•	password (String): The hashed password of the user.
+	•	name (String): The name of the user.
+	•	createdAt (String): The timestamp when the user was created.
+
+Explanation:
+The Users table stores information about users registered on the platform. Each user is uniquely identified by userId. The email is used for authentication, while the password is stored in a hashed format for security. The name field stores the user’s name, and createdAt records when the user registered.
+
+2. Hotels Table
+
+Table Name: Hotels
+
+Primary Key: hotelId (String)
+
+Fields:
+
+	•	hotelId (String): A unique identifier for each hotel.
+	•	name (String): The name of the hotel.
+	•	location (String): The location of the hotel (e.g., city or address).
+	•	pricePerNight (Number): The cost per night to stay at the hotel.
+	•	availableRooms (Number): The number of rooms available for booking.
+	•	description (String): A description of the hotel.
+	•	createdAt (String): The timestamp when the hotel was added to the platform.
+
+Explanation:
+The Hotels table stores information about hotels available for booking. Each hotel is uniquely identified by hotelId. The name, location, pricePerNight, availableRooms, and description provide essential details about each hotel. The createdAt field records when the hotel was added to the platform.
+
+3. Bookings Table
+
+Table Name: Bookings
+
+Primary Key: bookingId (String)
+
+Fields:
+
+	•	bookingId (String): A unique identifier for each booking.
+	•	userId (String): The unique identifier of the user who made the booking.
+	•	hotelId (String): The unique identifier of the hotel being booked.
+	•	checkInDate (String): The check-in date for the booking.
+	•	checkOutDate (String): The check-out date for the booking.
+	•	totalPrice (Number): The total price for the booking.
+	•	createdAt (String): The timestamp when the booking was made.
+
+Explanation:
+The Bookings table stores information about hotel bookings made by users. Each booking is uniquely identified by bookingId. The userId and hotelId link the booking to the respective user and hotel. The checkInDate and checkOutDate specify the duration of the stay, while totalPrice indicates the cost of the booking. The createdAt field records when the booking was made.
+
+4. Attractions Table
+
+Table Name: Attractions
+
+Primary Key: attractionId (String)
+
+Fields:
+
+	•	attractionId (String): A unique identifier for each attraction.
+	•	hotelId (String): The unique identifier of the hotel near the attraction.
+	•	name (String): The name of the attraction.
+	•	description (String): A description of the attraction.
+	•	distance (Number): The distance from the hotel to the attraction (in kilometers or miles).
+	•	createdAt (String): The timestamp when the attraction was added to the platform.
+
+Explanation:
+The Attractions table stores information about attractions near hotels. Each attraction is uniquely identified by attractionId. The hotelId links the attraction to a specific hotel. The name, description, and distance provide details about the attraction, including how far it is from the hotel. The createdAt field records when the attraction was added to the platform.
+
+Table Name: Carts
+
+Primary Key: cartId (String)
+
+Fields:
+
+	•	cartId (String): A unique identifier for each cart.
+	•	userId (String): The unique identifier of the user who owns the cart.
+	•	items (Array): An array of hotel items added to the cart.
+	•	totalPrice (Number): The total price of all items in the cart.
+	•	createdAt (String): The timestamp when the cart was created.
+
+Table Name: Comments
+
+Primary Key: commentId (String)
+
+Fields:
+
+	•	commentId (String): A unique identifier for each comment.
+	•	userId (String): The unique identifier of the user making the comment.
+	•	itemId (String): The unique identifier of the hotel ot attraction being commented on.
+	•   itemType (String): The type of the item (hotel or attraction).
+	•	comment (String): The content of the comment.
+	•	createdAt (String): The timestamp when the comment was created.
+
+
+Table Name: Favorites
+
+Primary Key: favoriteId (String)
+
+Fields:
+
+	•	favoriteId (String): A unique identifier for each favorite.
+	•	userId (String): The unique identifier of the user.
+	•	itemId (String): The unique identifier of the hotel or attraction.
+	•	itemType (String): The type of the item (hotel or attraction).
+	•	createdAt (String): The timestamp when the item was added to favorites.
+

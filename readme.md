@@ -1,0 +1,7 @@
+- Install dynamoDB-local:https://docs.aws.amazon.com/zh_cn/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html
+- run dynaoDB: java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
+- Create tables: `node ./config/createtables_local.js `
+- Import hotel.csv data: python importhotelstodb.py (the hotel.csv download from kaggle)
+- Add hotel price: python AddHotelPrice.py
+- Generate the room data: `python insertroomtable.py`
+- Run the server: node server.js

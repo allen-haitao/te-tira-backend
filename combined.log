@@ -1,0 +1,8 @@
+{"email":"user@example.com","level":"error","message":"Error during registration: passwordSchema is not defined","timestamp":"2024-09-09T22:25:01.073Z"}
+{"email":"user@example.com","level":"warn","message":"Password validation failed","timestamp":"2024-09-09T22:27:06.176Z"}
+{"email":"user@example.com","level":"warn","message":"Password validation failed","timestamp":"2024-09-09T22:27:21.046Z"}
+{"email":"user@example.com","level":"error","message":"Error during registration: null","timestamp":"2024-09-09T22:28:15.410Z"}
+{"level":"info","message":"User registered successfully: user@example.com","timestamp":"2024-09-09T22:30:29.360Z"}
+{"level":"error","message":"Failed login attempt: Incorrect password for email - user@example.com","timestamp":"2024-09-09T22:30:52.098Z"}
+{"level":"info","message":"Successful login: user@example.com","timestamp":"2024-09-09T22:31:03.382Z"}
+{"level":"info","message":"Successful login: user@example.com","timestamp":"2024-09-09T22:55:25.804Z"}

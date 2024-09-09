@@ -1,0 +1,28 @@
+{
+  "name": "527-project",
+  "version": "1.0.0",
+  "description": "tourism e-commerce platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "aws-sdk": "^2.1664.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "decimal.js": "^10.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.2.0",
+    "he": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "password-validator": "^5.3.0",
+    "sanitize-html": "^2.13.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.14.2"
+  }
+}
