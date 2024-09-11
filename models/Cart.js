@@ -1,5 +1,5 @@
 const dynamodb = require('../config/db');
-const Booking = require('./booking')
+const Booking = require('./Booking')
 const { v4: uuidv4 } = require('uuid');
 const { Decimal } = require('decimal.js');
 

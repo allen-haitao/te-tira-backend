@@ -1,5 +1,5 @@
 const Cart = require('../models/Cart');
-const Room = require('../models/room');
+const Room = require('../models/Room');
 const logger = require('../utils/logger');
 
 /**
